@@ -1,0 +1,44 @@
+.container {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding-top: 3.125rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+}
+
+.container .slideUp {
+  -webkit-animation: slideUp .1s forwards;
+          animation: slideUp .1s forwards;
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+  }
+}
